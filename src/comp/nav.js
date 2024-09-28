@@ -1,6 +1,5 @@
 import React from 'react'
-import { FaBeer } from "react-icons/fa";
-
+import { MdLocalShipping } from "react-icons/md";
 const Nav = () => {
     return (
         <div className='header'>
