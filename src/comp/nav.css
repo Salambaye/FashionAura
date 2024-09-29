@@ -84,5 +84,25 @@
     border: 1px solid #42312b;
     color: #e0b79e;
 
+}
 
+.header .mid_header .user
+{
+    display: flex;
+}
+
+.header .mid_header .user .icon
+{
+    margin-right: 10px;
+    font-size: 25px;
+}
+
+.header .mid_header .user .btn button
+{
+    border: none;
+    outline: none;
+    font-size: 20px;
+    background: none;
+    cursor: pointer;
+    padding: 0;
 }
