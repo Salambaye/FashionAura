@@ -3,7 +3,7 @@ import './nav.css'
 import { MdLocalShipping } from 'react-icons/md'
 import { AiOutlineSearch } from "react-icons/ai";
 import { MdOutlineLogin } from "react-icons/md";
-import { CiLogout } from "react-icons/ci";
+import { CiLogout, CiUser } from "react-icons/ci";
 import { useAuth0 } from "@auth0/auth0-react";
 
 const Nav = () => {
@@ -55,6 +55,37 @@ const Nav = () => {
 
                 }
             </div>
+
+            <div className='last_header'>
+                <div className='user_profile'>
+                    {
+                        //Pour voir le profil de l'utilisateur après authentification
+                        isAuthenticated ?
+                            <>
+                                <div className='icon'>
+                                    <CiUser/>
+                                </div>
+                                <div className='info'>
+                                    <h2>{user.name}</h2>
+                                    <p>{user.email}</p>
+                                </div>
+                            </>
+                            :
+                            <>
+                                <div className='icon'>
+                                    <CiUser/>
+                                </div>
+                                <div className='info'>
+                                    <p>Connectes-toi stp</p>
+                                </div>
+                            </>
+
+
+                    }
+                </div>
+
+            </div>
+
         </div>
     </>
 
